@@ -4,7 +4,7 @@ A simple yet functional RTSS overlay that provides vital metrics ensuring proper
 The overlay uses joint data from RTSS and PresentMon built-in plugin that build the several metrics to monitor like CPU, GPU, and many more.
 ## Features
 
-| Hardware | Data |
+| Category | Data |
 | - | - |
 | CPU Name | Usage(%), Clock(MHz), Power(W), Temp° |
 | RAM (Total RAM) | Usage(%) |
