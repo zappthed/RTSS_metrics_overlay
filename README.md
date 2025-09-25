@@ -1,7 +1,3 @@
-# RTSS_metrics_overlay
-
-A custom hardware metrics overlay for RivaTuner Statistics Server's Overlay Editor that can be used to monitor the hardware of the PC.
-
 ## Overview
 
 A simple yet functional RTSS overlay that provides vital metrics ensuring proper insights during gameplay or stress tests.
