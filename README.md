@@ -8,7 +8,7 @@ The overlay uses joint data from RTSS and PresentMon built-in plugin that build 
 | - | - |
 | GPU Driver | Edition/Version |
 | CPU Name | Usage(%), Clock(MHz), Temp°, Power(W) |
-| RAM (Total RAM) | Usage(%) |
+| RAM (Total RAM) | Usage(GB) |
 | GPU Name | Usage(%), Clock(MHz), Temp°, Power(W) |
 | VRAM (Total VRAM) | Usage(GB), Clock(MHz), Temp° |
 | FPS (API) | Average, 1% Low, 0.1% Low, Frametime |
