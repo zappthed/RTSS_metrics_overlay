@@ -1,0 +1,277 @@
+[Master]
+Implementation=2
+FontFace=Unispace
+FontHeight=-9
+FontWeight=400
+ZoomRatio=2
+[Settings]
+Name=
+EnvVars=PM_RefreshPeriod=33;PM_DisplayDelay=3000;PM_ProcessId=1
+RefreshPeriod=1000
+EmbeddedImage=
+PingAddr=
+[General]
+Sources=25
+Tables=1
+Layers=1
+[Source0]
+Name=CPU usage
+Units=%
+Format=
+Formula=
+Provider=HAL
+ID=CPU usage
+[Source1]
+Name=CPU power
+Units=W
+Format=
+Formula=
+Provider=HAL
+ID=CPU power
+[Source2]
+Name=CPU temperature
+Units=°C
+Format=
+Formula=
+Provider=HAL
+ID=CPU temperature
+[Source3]
+Name=CPU clock
+Units=MHz
+Format=
+Formula=
+Provider=HAL
+ID=CPU clock
+[Source4]
+Name=CPU13 clock
+Units=MHz
+Format=
+Formula=
+Provider=HAL
+ID=CPU13 clock
+[Source5]
+Name=RAM usage percent
+Units=%
+Format=
+Formula=
+Provider=HAL
+ID=RAM usage percent
+[Source6]
+Name=RAM usage
+Units=GB
+Format=%0.1f
+Formula=x/1024
+Provider=HAL
+ID=RAM usage
+[Source7]
+Name=RAM usage \ process
+Units=GB
+Format=%0.1f
+Formula=x/1024
+Provider=HAL
+ID=RAM usage \ process
+[Source8]
+Name=Total RAM
+Units=GB
+Format=%0.01f
+Formula=x/1024
+Provider=HAL
+ID=Total RAM
+[Source9]
+Name=GPU1 usage
+Units=%
+Format=
+Formula=
+Provider=HAL
+ID=GPU1 usage
+[Source10]
+Name=GPU1 temperature
+Units=°C
+Format=
+Formula=
+Provider=HAL
+ID=GPU1 temperature
+[Source11]
+Name=GPU1 power
+Units=W
+Format=
+Formula=
+Provider=HAL
+ID=GPU1 power
+[Source12]
+Name=GPU1 clock
+Units=MHz
+Format=
+Formula=
+Provider=HAL
+ID=GPU1 clock
+[Source13]
+Name=GPU1 memory clock
+Units=MHz
+Format=
+Formula=
+Provider=HAL
+ID=GPU1 memory clock
+[Source14]
+Name=GPU1 memory usage percent
+Units=%
+Format=
+Formula=
+Provider=HAL
+ID=GPU1 memory usage percent
+[Source15]
+Name=GPU1 memory usage
+Units=GB
+Format=%0.1f
+Formula=x/1024
+Provider=HAL
+ID=GPU1 memory usage
+[Source16]
+Name=GPU1 memory usage \ process
+Units=GB
+Format=%0.1f
+Formula=x/1024
+Provider=HAL
+ID=GPU1 memory usage \ process
+[Source17]
+Name=GPU1 total memory
+Units=GB
+Format=%0.01f
+Formula=x/1024
+Provider=HAL
+ID=GPU1 total memory
+[Source18]
+Name=GPU1 memory temperature
+Units=°C
+Format=
+Formula=
+Provider=HAL
+ID=GPU1 memory temperature
+[Source19]
+Name=IsGpuLimited
+Units=
+Format=
+Formula=(msGpuActive / msBetweenPresents) >= 0.75
+Provider=HAL
+ID=Stub
+[Source20]
+Name=FrameratePresented1Dot0PLow
+Units=1%
+Format=
+Formula=1000/percentile(msBetweenPresents,99)
+Provider=HAL
+ID=Stub
+[Source21]
+Name=FrameratePresented0Dot1PLow
+Units=0.1%
+Format=
+Formula=1000/percentile(msBetweenPresents,99.9)
+Provider=HAL
+ID=Stub
+[Source22]
+Name=msBetweenPresents
+Units=ms
+Format=
+Formula=
+Provider=PresentMon
+ID=msBetweenPresents
+[Source23]
+Name=msGpuActive
+Units=ms
+Format=
+Formula=
+Provider=PresentMon
+ID=msGpuActive
+[Source24]
+Name=PresentMode
+Units=
+Format=
+Formula=
+Provider=PresentMon
+ID=PresentMode
+[Table0]
+Name=PC
+ValueAlignment=0
+UnitsAlignment=0
+Lines=19
+Line0Name=%CPU%
+Line0Cells=1
+Line0Cell0Source=CPU usage
+Line0Cell0Color=FF0000,98,(CPU usage,0)
+Line1Name=CPU Clock
+Line1Cells=1
+Line1Cell0Source=CPU clock
+Line2Name=CPU Power
+Line2Cells=1
+Line2Cell0Source=CPU power
+Line2Cell0Color=FFFFFF,,200,FF0000,200,(CPU power,0)
+Line3Name=CPU Temp
+Line3Cells=1
+Line3Cell0Source=CPU temperature
+Line3Cell0Color=FF0000,90,(CPU temperature,0)
+Line4Name=RAM (%RAM%)
+Line4Cells=1
+Line4Cell0Source=RAM usage
+Line5Name=
+Line5Cells=1
+Line5Cell0Text=
+Line6Name=%GPU% <IF IsGpuLimited><C=FF0000>(L)<C><ELSE><IF>
+Line6Cells=1
+Line6Cell0Source=GPU1 usage
+Line6Cell0Color=FF0000,98,(GPU1 usage,0)
+Line7Name=GPU Clock
+Line7Cells=1
+Line7Cell0Source=GPU1 clock
+Line7Cell0Color=FF0000,2700,(GPU1 clock,0)
+Line8Name=GPU Power
+Line8Cells=1
+Line8Cell0Source=GPU1 power
+Line8Cell0Color=FF0000,220,(GPU1 power,0)
+Line9Name=GPU Temp
+Line9Cells=1
+Line9Cell0Source=GPU1 temperature
+Line9Cell0Color=FFFFFF,,80,FF0000,90,(GPU1 temperature,0)
+Line10Name=VRAM (%VRAM%)
+Line10Cells=1
+Line10Cell0Source=GPU1 memory usage
+Line11Name=VRAM Clock
+Line11Cells=1
+Line11Cell0Source=GPU1 memory clock
+Line11Cell0Color=FF0000,2518,(GPU1 memory clock,0)
+Line12Name=VRAM Temp
+Line12Cells=1
+Line12Cell0Source=GPU1 memory temperature
+Line12Cell0Color=FFFFFF,,80,FF0000,90,(GPU1 memory temperature,0)
+Line13Name=
+Line13Cells=1
+Line13Cell0Text=
+Line14Name=FPS
+Line14Cells=1
+Line14Cell0Source=Framerate
+Line14Cell0Color=FF0000,,60,FFFFFF,60,(Framerate,0)
+Line15Name=FPS Avg
+Line15Cells=1
+Line15Cell0Source=Framerate Avg
+Line16Name=FPS 1%
+Line16Cells=1
+Line16Cell0Source=Framerate 1% Low
+Line16Cell0Color=FF0000,,60,FFFFFF,60,(Framerate 1% Low,0)
+Line17Name=FPS 0.1% Low
+Line17Cells=1
+Line17Cell0Source=Framerate 0.1% Low
+Line17Cell0Color=FF0000,,60,FFFFFF,60,(Framerate 0.1% Low,0)
+Line18Name=Frametime
+Line18Cells=3
+Line18Cell0Source=Frametime
+Line18Cell1Text=\r\n<G=Frametime,0,-2,1,0,100,80>
+Line18Cell2Text=\r\n<SWITCH PresentMode><CASE 0><C=008000>Hardware: legacy flip<C><CASE 1><C=008000>Hardware: legacy copy<C><CASE 2><C=008000>Hardware: independent flip<C><CASE 3><C=FF0000>Composed: flip<C><CASE 4><C=00FF00>Hardware composed: independent flip<C><CASE 5><C=800000>Composed: GPU copy<C><CASE 6><C=800000>Composed: CPU copy<C><CASE>
+[Layer0]
+Name=
+Text=<S=50>%Driver%<S>\r\n<TT=PC>
+PositionSticky=0
+ExtentX=0
+ExtentY=0
+ExtentOrigin=0
+FixedAlignment=1
+TextColor=FFFFFF
+BgndColor=80000000
