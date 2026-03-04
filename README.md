@@ -15,9 +15,9 @@ The overlay uses joint data from RTSS and PresentMon built-in plugin that build 
 | Presentation Model | Hardware (Composed): Independent/Legacy flip; Composed: Copy |
 
 *Compact
-  <img src="https://raw.githubusercontent.com/zappthed/RTSS_Metrics_Overlay/refs/heads/main/Preview/RTSS_Metrics_Overlay_compact_preview.png" style="max-height: 800px; width: auto;">
+  <img src="https://raw.githubusercontent.com/zappthed/RTSS_Metrics_Overlay/refs/heads/main/Preview/RTSS_Metrics_Overlay_compact.png" style="max-height: 800px; width: auto;">
 *Detailed
-  <img src="https://raw.githubusercontent.com/zappthed/RTSS_Metrics_Overlay/refs/heads/main/Preview/RTSS_Metrics_Overlay_detailed_preview.png" style="max-height: 800px; width: auto;">
+  <img src="https://raw.githubusercontent.com/zappthed/RTSS_Metrics_Overlay/refs/heads/main/Preview/RTSS_Metrics_Overlay_detailed.png" style="max-height: 800px; width: auto;">
 
 ## Presentation Model
 
