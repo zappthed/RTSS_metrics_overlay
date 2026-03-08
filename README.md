@@ -13,14 +13,14 @@ The overlay uses joint data from RTSS and PresentMon built-in plugin that build 
 | VRAM (Total VRAM) | Usage(GB), Clock(MHz), Temp(C°) |
 | FPS (API) | Current, Average, 1%, 0.1% |
 | Frametime | Graph |
-| Presentation Model | Hardware (Composed): Independent/Legacy flip; Composed: Copy |
+| Presentation Model** | Hardware (Composed): Independent/Legacy flip; Composed: Copy |
 
 ### Overlay Previews
   <img src="https://raw.githubusercontent.com/zappthed/RTSS_metrics_overlay/refs/heads/main/Preview/RTSS_metrics_overlay_compact.png" style="max-height: 250px; width: auto;">
   <img src="https://raw.githubusercontent.com/zappthed/RTSS_metrics_overlay/refs/heads/main/Preview/RTSS_metrics_overlay_detailed.png" style="max-height: 500px; width: auto;">
   <img src="https://raw.githubusercontent.com/zappthed/RTSS_metrics_overlay/refs/heads/main/Preview/Zappthed_OVERLAY.png" style="max-height: 330px; width: auto;">
 
-## Presentation Model
+## Presentation Model**
 
 ### Flip (D3D11/12*)
   <img src="https://github.com/zappthed/RTSS_Metrics_Overlay/blob/main/Preview/presentation_model_d3d11-12_flip.png" style="max-height: 800px; width: auto;">
