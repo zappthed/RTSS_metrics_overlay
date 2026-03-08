@@ -2,8 +2,8 @@
 
 A simple yet functional RTSS overlay that provides vital metrics ensuring proper insights during gameplay or stress tests.
 The overlay uses joint data from RTSS and PresentMon built-in plugin that build the several metrics to monitor like CPU, GPU, and many more.
-## Features
 
+## Features
 | Category | Data |
 | - | - |
 | GPU Driver | Edition/Version |
@@ -24,6 +24,7 @@ The overlay uses joint data from RTSS and PresentMon built-in plugin that build 
 ## Presentation Model
 
 ### Flip (D3D11/12*)
+  <img src="https://github.com/zappthed/RTSS_Metrics_Overlay/blob/main/Preview/presentation_model_d3d11-12_flip.png" style="max-height: 800px; width: auto;">
 For a game using a Flip swap effect, there are various factors that determine which presentation model will be used:
 
 - The requested display mode of the game.
@@ -35,4 +36,3 @@ For a game using a Flip swap effect, there are various factors that determine wh
     - DirectFlip with panel fitters (requires MPO): Your window client region covers the screen, and your swapchain buffers are within some hardware-dependent scaling factor (for example, 0.25x to 4x) of the screen. The GPU scanout hardware is used to scale your buffer while sending it to the display.
     - DirectFlip with multi-plane overlay (requires MPO): Your swapchain buffers are within some hardware-dependent scaling factor of your window dimensions. The DWM is able to reserve a dedicated hardware scanout plane for your application, which is then scanned out and potentially stretched to an alpha-blended sub-region of the screen.
 
-  <img src="https://github.com/zappthed/RTSS_Metrics_Overlay/blob/main/Preview/presentation_model_d3d11-12_flip.png" style="max-height: 800px; width: auto;">
